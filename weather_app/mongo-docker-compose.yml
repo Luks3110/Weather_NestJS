@@ -1,0 +1,9 @@
+services:
+  # Database - Mongo DB
+  mongo:
+    image: mongo
+    environment:
+      MONGO_INITDB_DATABASE: fastersapi
+    ports:
+      - '27017:27017'
+
