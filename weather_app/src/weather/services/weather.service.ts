@@ -23,7 +23,7 @@ export class WeatherService {
   private getWeatherById(id: number): Observable<AxiosResponse<any>> {
     const open_weather = this.httpService
       .get(
-        `https://api.openweathermap.org/data/2.5/weather?id=${id}&appid=bbd2222aea2a2fa131e061c5f63eb4bd&lang=pt_br`,
+        `https://api.openweathermap.org/data/2.5/weather?id=${id}&appid={APIKEY}&lang=pt_br`,
       )
       .pipe(map((response) => response));
 
